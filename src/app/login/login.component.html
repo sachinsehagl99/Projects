@@ -1,0 +1,37 @@
+
+ <head>
+   <meta charset="utf-8">
+   <title>Login Form</title>
+ </head>
+ <body>
+<div class="title"><h1>SignIn</h1></div>
+    <div class="container">
+  
+      <div class="right">
+        <div class="formbox">
+        <form name = "loginFrm" (ngSubmit) = "login()"  #loginForm = "ngForm">
+    <p>
+      <input type="text" [(ngModel)]="email" id = "emailid" placeholder="email"  #name = "ngModel"  [ngModelOptions]="{standalone: true}"  required autofocus="">
+    </p>
+    <p>
+    <input type="password" [(ngModel)]="password" placeholder="password" #name = "ngModel"  [ngModelOptions]="{standalone: true}" required >
+    </p>
+    <div *ngIf="loginForm.submitted  && name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+       email/password is either empty or invalid.
+    </div>
+    <!-- <div *ngIf="pswd.invalid && (pswd.dirty || pswd.touched)" class="alert alert-danger">
+      Password can't be left empty.
+    </div>   -->
+    <p>
+        <a routerLink="/signup" >SignUp</a> 
+        <button type ="submit"  [disabled]="!loginForm.form.valid" >
+          Login
+        </button>   
+    </p>
+    <p>
+      <button (click)="sendResetEmail()" [disabled]="!email ||!logout">
+        Reset Password
+      </button>
+    </p>
+  </form>
+</div>

@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    font-family: sans-serif;
+}
+.profile h2{
+    margin: 0;
+    padding: 0;
+    color: #004466;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.profile input{
+    width: 20%;
+    height: 30px;
+    margin-bottom: 20px;
+
+}
+.profile input[type="text"]
+{
+    border:none;
+    border-bottom: 2px solid #004466;
+    outline: none;
+    height: 40px;
+}
+.profile input[type="text"]:focus,
+{
+    border-bottom: 2px solid #004466;
+}
+.profile input[type="submit"]
+{
+    border-bottom: 2px solid #004466;
+    height: 40px;
+    width: 50px;
+}
+.profile input[type="number"]
+{
+    border:none;
+    border-bottom: 2px solid #004466;
+    outline: none;
+    height: 40px;
+}
+.profile input[type="number"]:focus,
+{
+    border-bottom: 2px solid #004466;
+}
+#nav{
+     position: fixed;
+     width: 150px;
+     height:100%;
+     background:#808080;
+
+ }
+/* #nav ul li{
+     color:white;
+     list-style: none;
+     padding: 15px 10px;
+     border-bottom: 1px solid rgba(100, 100, 100, 0,3);
+ }*/
+ ul{
+     list-style:none;
+     padding: 0;
+     margin: 0;
+ }
+ li{
+     float:left;
+     margin-top: 10px;
+ }
+a:link {
+    color: blue;
+}
+
+/* mouse over link */
+a:hover {
+    color: black;
+}
+
+/* selected link */
+a:active {
+    color: green;
+}
+ a{
+     width: 100px;
+     line-height: 40px;
+     color: white;
+     display: block;
+     text-decoration: none;
+     font-size: 20px;
+     text-align: center;
+     padding: 10px;
+     border-radius: 10px;
+     font-family: Georgia;
+     font-weight: bold;
+ }
+ 

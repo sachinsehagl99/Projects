@@ -1,0 +1,37 @@
+<title>
+    SIGNUP FORM</title>
+<form (ngSubmit)="signup()" #signupForm="ngForm">
+
+    <body>
+        <div class="title">
+            <h1>SignUP</h1>
+        </div>
+        <div class="container">
+
+            <div class="right">
+                <div class="formbox">
+                    <p class="form_label"></p>
+                    <p><input type="text" [(ngModel)]="displayName" placeholder="Full name" #name="ngModel" [ngModelOptions]="{standalone: true}" required> </p>
+
+                    <p><input type="text" [(ngModel)]="email" placeholder="email" #name="ngModel" [ngModelOptions]="{standalone: true}" required autofocus=""> </p>
+
+                    <p><input type="text" [(ngModel)]="displayName" placeholder="uname" #name="ngModel" [ngModelOptions]="{standalone: true}" required> </p>
+                    <p><input type="password" [(ngModel)]="password" placeholder="password" #name="ngModel" [ngModelOptions]="{standalone: true}" required></p>
+
+                    <div *ngIf=" signupForm.submitted && name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+
+                        <div *ngIf="name.errors.required">
+                            One of required feild is empty or invalid.
+                        </div>
+                    </div>
+
+
+                    <p><button type="submit" [disabled]="!signupForm.form.valid || !email || !displayName  || !password">Signup</button>
+                        <button (click)="resetField()" [disabled]="!email || !displayName  || !password">Reset</button>
+                        <a routerLink="/login">Login</a></p>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</form>

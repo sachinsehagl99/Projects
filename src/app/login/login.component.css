@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    font-family: sans-serif;
+}
+.title{
+    text-align: center;
+    padding: 50px 0 20px;
+
+}
+.title h1{
+    margin: 0;
+    padding: 0;
+    color: #004466;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+
+}
+.container
+{
+    width: 50%;
+    height: 400px;
+    background: #fff;
+    margin: 0 auto;
+    border: 2px solid #fff;
+    box-shadow: 0 15px 40px rgba(0,0,0,.5);
+}
+
+.container .right{
+    position: relative;
+    left:130px;
+    width: 50%;
+    height: 400px;
+
+}
+.formbox{
+    width: 100%;
+    padding: 80px 10px;
+    box-sizing: border-box;
+    height: 400px;
+    background:#fff;
+
+}
+.formbox p{
+   margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #a6af13;
+    
+}
+.formbox input{
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+.formbox input[type="text"],
+.formbox input[type="password"]
+{
+    border:none;
+    border-bottom: 2px solid #a6af13;
+    outline: none;
+    height: 40px;
+}
+.formbox input[type="text"]:focus,
+.formbox input[type="password"]:focus
+{
+border-bottom: 2px solid #262626;
+}
+.formbox a{
+    color:#004466 ;
+}
+.button {
+    background-color:#004466 ;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
